@@ -192,7 +192,6 @@ int contract(Graph *grafo, int vertexA, int vertexB, int vertices, int auxvertic
                         grafo->edges[j][i] = 0;
                         grafo->contracoes[i][j] = 1;
                         grafo->contracoes[j][i] = 1;
-                        //printf("Rola de Macaco\n");
                     }
                 }
                 grafo->contracoes[i][vertexB] = 1;
@@ -211,7 +210,6 @@ int contract(Graph *grafo, int vertexA, int vertexB, int vertices, int auxvertic
                         grafo->edges[j][i] = 0;
                         grafo->contracoes[i][j] = 1;
                         grafo->contracoes[j][i] = 1;
-                        //printf("Rola de Cebola\n");
                     }
                 } 
                 grafo->contracoes[i][vertexA] = 1;
